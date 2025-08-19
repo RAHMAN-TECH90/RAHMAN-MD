@@ -21,7 +21,7 @@ cmd({
     await conn.sendMessage(from, { react: { text: '⏳', key: m.key } });
 
     // Prepare the API URL
-    const apiUrl = `https://api.nexoracle.com/downloader/tiktok-nowm?apikey=free_key@maher_apis&url=${encodeURIComponent(tiktokUrl)}`;
+    const apiUrl = `https://apis.davidcyriltech.my.id/download/tiktok?url=${encodeURIComponent(tiktokUrl)}`;
 
     // Call the API using GET
     const response = await axios.get(apiUrl);
