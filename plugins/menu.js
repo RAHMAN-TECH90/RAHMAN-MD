@@ -317,7 +317,7 @@ let madeMenu = `*╭┈──「${config.BOT_NAME}」┈───⊷*
 ‎*┋* *⬡ ᴍɪɴᴜᴛᴏʀ*
 ‎*┋* *⬡ ᴘɪᴄᴋᴜᴘʟɪɴᴇ*
 ‎*╰──────────────────✑*
-> *ғꪮʀ ʏꪮꪊ ғꪮʀ ᴀʟʟ ꪮғ ᴀꜱ 🍉*`
+> *_ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴀʜᴍᴀɴ ᴛᴇᴄʜ_*`
 
 if (!config.ALIVE_IMG.includes('mp4')) {
 await conn.sendMessage(from,{image:{url: config.ALIVE_IMG},caption:madeMenu,
