@@ -25,13 +25,13 @@ async (conn, mek, m, { from, args, q, reply }) => {
         const videoUrl = meta.media.find(v => v.type === "video").org;
         
         const caption = `*_ʀᴀʜᴍᴀɴ-ᴍᴅ ᴛɪᴋᴛᴏᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ_* 🎶
-*‎╭─────────────────━⊷*
+*‎╭───────────────━⊷*
 *‎│▸*👤 *ᴀᴜᴛʜᴏʀ:* ${author.nickname} (@${author.username})
 *‎│▸ℹ️ ᴛɪᴛʟᴇ:* ${title}
 *‎│▸*👍 *ʟɪᴋᴇs:* ${like}
 *‎│▸*💬 *ᴄᴏᴍᴍᴇɴᴛs:* ${comment}
 *‎│▸*🔁 *sʜᴀʀᴇs:* ${share}
-*‎‎╰─•*◈ *_ᴾᵒʷᵉʳᵉᵈ ᵇʸ ᴿᵃʰᵐᵃⁿ ᵀᵉᶜʰ_* ◈━⊷`;
+*‎‎╰─•*◈ *_ᴾᵒʷᵉʳᵉᵈ ᵇʸ ᴿᵃʰᵐᵃⁿ ᵀᵉᶜʰ_*`;
         
         await conn.sendMessage(from, {
             video: { url: videoUrl },
