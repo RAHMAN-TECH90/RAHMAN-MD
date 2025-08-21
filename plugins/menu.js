@@ -17,7 +17,7 @@ let madeMenu = `*╭┈──「${config.BOT_NAME}」┈───⊷*
 *┃ 🫟* *ᴍᴏᴅᴇ :* *${config.MODE}*
 *┃ 🪄* *ᴘʀᴇғɪx :* *${config.PREFIX}*
 *┃ 🛰️* *ʀᴀᴍ :* *𝟹𝟺.𝟻𝟼 ɢʙ/𝟼𝟶.𝟽𝟿*
-*┃ 👑* *ᴄʀᴇᴀᴛᴏʀ :* *ᴀʟɪ ɪɴxɪᴅᴇ*
+*┃ 👑* *ᴄʀᴇᴀᴛᴏʀ :* *ʀᴀʜᴍᴀɴ ᴛᴇᴄʜ*
 *┃ 🎐* *ᴠᴇʀsɪᴏɴ :* *𝟺.𝟻.𝟶 ʙᴇᴛᴀ☯︎*
 ‎*╰┈─────────────────⊷*
 *🏮 \`DOWNLOAD-CMD\` 🏮*
@@ -319,35 +319,28 @@ let madeMenu = `*╭┈──「${config.BOT_NAME}」┈───⊷*
 ‎*╰──────────────────✑*
 > *_ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴀʜᴍᴀɴ ᴛᴇᴄʜ_*`
 
+// Send video 
 if (!config.ALIVE_IMG.includes('mp4')) {
-await conn.sendMessage(from,{image:{url: config.ALIVE_IMG},caption:madeMenu,
-                             contextInfo: {
-    mentionedJid: [m.sender],
-    forwardingScore: 999,
-    isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363201214007503@newsletter',
-      newsletterName: config.BOT_NAME,
-      serverMessageId: 999
-    }
-  }
-}, { quoted: mek });
+  await conn.sendMessage(from,{
+    image:{url: config.ALIVE_IMG},
+    caption: madeMenu
+  },{quoted: mek})
 } else {
-await conn.sendMessage(from,{video:{url: config.ALIVE_IMG},caption:madeMenu,
-                             contextInfo: {
-    mentionedJid: [m.sender],
-    forwardingScore: 999,
-    isForwarded: true,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363201214007503@newsletter',
-      newsletterName: config.BOT_NAME,
-      serverMessageId: 999
-    }
-  }
-}, { quoted: mek });
+  await conn.sendMessage(from,{
+    video:{url: config.ALIVE_IMG},
+    caption: madeMenu
+  },{quoted: mek})
 }
+
+// Send audio 
+await conn.sendMessage(from,{
+   audio: { url: "https://files.catbox.moe/8a1f2p.mp3" }, 
+   mimetype: 'audio/mpeg',
+   ptt: false
+},{quoted: mek})
+
 } catch (e) {
-console.log(e)
-reply(`${e}`)
+ console.log(e)
+ reply(`${e}`)
 }
 })
