@@ -334,7 +334,7 @@ if (!config.ALIVE_IMG.includes('mp4')) {
 
 // Send audio 
 await conn.sendMessage(from,{
-   audio: { url: "https://files.catbox.moe/8a1f2p.mp3" }, 
+   audio: { url: "https://github.com/Dark-evil2/AUDIO/blob/main/Assalam%20o%20alaikum.mp3" }, 
    mimetype: 'audio/mpeg',
    ptt: false
 },{quoted: mek})
