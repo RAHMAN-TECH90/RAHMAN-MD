@@ -1,6 +1,5 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
+/*created by RAHMAN TECH 🕵
+contact dev 923015954782 ♻️
 © Copy coder alert ⚠
 */
 
